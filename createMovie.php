@@ -1,0 +1,122 @@
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--title of the page-->
+    <title>Eiyū no Log-In</title>
+	
+	<!--links to all the styling pages-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+	
+	<!--in document styling-->
+	<style>
+h1 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: center;}
+h1 { font-family: "Libre Baskerville", serif;}
+h3 { font-family: "Libre Baskerville", serif;}
+p {font-family: "IBM Plex Sans Condensed", sans-serif;}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td {
+            font-weight: lighter;
+        }
+
+	a {
+  color: inherit;
+  text-decoration: inherit;
+}	
+	</style>
+</head>
+  <body>
+  
+  <!--navbar and menu-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+		<img src="blue mercedes benz.png" alt = "" width = "40" height = "40" class="d-inline-block align-text-top">
+      Eiyū no Cinema
+    </a>
+	
+<!--movie creation form-->
+<body>
+    <center>
+        <h2>Create Entry for Movie</h2>
+        <form action = "upload.php" method="POST">
+            Title:
+            <input name="title" required type="text"/>
+            <br/><br/>
+
+            Poster:
+            <input name="poster_url" required type="text"/>
+            <br/><br/>
+
+            Trailer:
+			<input name="trailer" required type="text"/>
+            <br/><br/>
+
+            Description:
+            <textarea name="description" required></textarea>
+            <br/><br/>
+
+            Year:
+            <input name="year" required type="number" placeholder="YYYY" min="1900" max="2025"/>
+            <br/><br/>
+			
+			Category:
+            <input name="category" required type="text"></textarea>
+            <br/><br/>
+
+            <input type="submit" value="Submit"/>
+        </form>
+    </center>
+	</div>
+	
+	
+	<div class="container">
+        <div class="row">
+            <div class="container p-5 my-5 bg-danger text-white">
+			<p> 
+			<a href="privacyPolicy.php">Privacy Policy</a>
+			</p>
+			
+			<p> 
+			<a href="feedback.php">Contact Us</a>
+			</p>
+			</div>
+        </div>
+    </div>
+ 
+</body>
+
